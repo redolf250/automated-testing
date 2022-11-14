@@ -61,4 +61,9 @@ class ServiceTest {
     void test(){
         Assertions.assertTrue(true);
     }
+
+    @Test
+    void test1(){
+        Assertions.assertTrue(true);
+    }
 }
