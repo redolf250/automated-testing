@@ -1,18 +1,28 @@
 package com.redolf.itech.service;
 
+import com.redolf.itech.dto.StudentRequest;
 import com.redolf.itech.model.Student;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
+
+@RunWith(MockitoJUnitRunner.class)
 class ServiceTest {
 
-
+    @InjectMocks
     public Service service = new Service();
+
     public Student student;
 
     @BeforeEach
@@ -59,7 +69,14 @@ class ServiceTest {
 
     @Test
     void test(){
-        Assertions.assertTrue(true);
+//        StudentRequest  student_ = StudentRequest.builder()
+//                .studentId(UUID.randomUUID().toString())
+//                .firstName("Asamani")
+//                .lastName("Anack")
+//                .reference(7575)
+//                .index(5574)
+//                .build();
+//      when(service.createStudent(student)).thenReturn(student_);
     }
 
     @Test
