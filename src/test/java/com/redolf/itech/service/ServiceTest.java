@@ -1,6 +1,7 @@
 package com.redolf.itech.service;
 
 import com.redolf.itech.model.Student;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -54,5 +55,10 @@ class ServiceTest {
     void filterByLastname() {
         service.filterByLastname(getReference_(),"P");
         System.out.println("service = " + service.filterByLastname(getReference_(),"P"));
+    }
+
+    @Test
+    void test(){
+        Assertions.assertTrue(true);
     }
 }
